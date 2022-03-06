@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Currículo</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="toggleBtn.css">
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/source-sans-pro" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="conteudo"> 
+        <div class="sidebar" >
+            <div class="icon-space" onclick="clickToggle()"></div>
+            <img src="foto-lina.PNG" alt="Foto de perfil" onclick="clickToggle()">
+            <div class="container contato">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="person"></ion-icon></div>
+                    <p>Contact</p>
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="mail-open"></ion-icon></div>
+                        <span>linas.perezm@gmail.com</span>
+                    </li>
+                    <li onclick="sendMessage()">
+                        <div class="icon-space"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                        <span>+ 57 304 200 6338</span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/lina-susana-p%C3%A9rez-mora-6871a1168/">
+                            <div class="icon-space"><ion-icon name="logo-linkedin"></ion-icon></div>
+                            <span>lina-susana-pérez-mora</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Lisupemo">
+                            <div class="icon-space"><ion-icon name="logo-github"></ion-icon></div>
+                            <span>Lisupemo</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container skills">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="construct"></ion-icon></div>
+                    <p>Skills</p> 
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="construct"></ion-icon></div>
+                        <span>Microbiological processes</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="construct"></ion-icon></div>
+                        <span>Organization</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="construct"></ion-icon></div>
+                        <span>Design of experiments</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="construct"></ion-icon></div>
+                        <span>Work discipline</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="construct"></ion-icon></div>
+                        <span>Leadership</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="construct"></ion-icon></div>
+                        <span>Optimization</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container education">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="school"></ion-icon></div>
+                    <p>Education</p> 
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="school"></ion-icon></div>
+                        <span>PhD of Science – USP: Universidade de São Paulo
+                            <span>
+                                <br>
+                                2015 – 2019
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="school"></ion-icon></div>
+                        <span>Master of Science – USP: Universidade de São Paulo
+                            <span>
+                                <br>
+                                2014 – 2011
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="school"></ion-icon></div>
+                        <span>Bachelor's degree in Industrial Microbiology – Pontificia Universidad Javeriana
+                            <span>
+                                <br>
+                                2006 – 2011
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container idiomas">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="mic"></ion-icon></div>
+                    <p>Language</p>
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="people-circle"></ion-icon></div>
+                        <span>Spanish (Native)</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="people-circle"></ion-icon></div>
+                        <span>Portuguese (Advanced)</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="people-circle"></ion-icon></div>
+                        <span>English (Intermediate)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container linguagens-programacao">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="desktop-outline"></ion-icon></div>
+                    <p>Programs</p> 
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="desktop-outline"></ion-icon></div>
+                        <span>Office</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="desktop-outline"></ion-icon></div>
+                        <span>Minitab</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="desktop-outline"></ion-icon></div>
+                        <span>Statistics</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="desktop-outline"></ion-icon></div>
+                        <span>Software GC</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo-principal">
+            <h1>LINA SUSANA PÉREZ MORA</h1>
+            <div class="linha-horizontal"></div>
+            <h2>Industrial Microbiologist</h2>
+            <h3>SUMMARY</h3>
+            <p>
+                A seasoned and professional individual whose education of science and investigation bring up the experience in methods, analysis, and processing of laboratory samples in an efficient manner.
+                I have worked for over 11 years to develop or assist in developing experimental designs. Provide technical assistance to regarding microbiological enquiries. Lead and participate in the development and improvement of processes.
+            </p>
+            <h3>
+                EXPERIENCE
+            </h3>
+            <h4>
+                Microbiology Director and Professor in Environmental Microbiology.
+            </h4>
+            <h5>
+                University of Santiago de Cali - Colombia | 2021/2021
+            </h5>
+            <ul>
+                <li><span style="font-weight: bold; text-decoration: underline;" class="highlight">Responsibilities</span>: Program Leadership.</li>
+                <li>Develop and maintaining the curriculum of undergraduate of microbiology.</li>
+                <li>Provide support and assistance of students.</li>
+                <li>Assist with high accreditation of undergraduate program of microbiology.</li>
+                <li>Provide academic oversight of the program and communicate with faculty to gather
+                    necessary input.</li>
+                <li>Facilitate regular meetings of program faculty.</li>
+                <li>Advise program and course development.</li>
+                <li>Recommend policy, curriculum, and program changes. Handle inquiries and
+                    communicate with prospective students.</li>
+            </ul>
+            <h4>
+                Researcher
+            </h4>
+            <h5>
+                University of São Paulo - Brazil | 2015/2019
+            </h5>
+            <ul>
+                <li><span style="font-weight: bold; text-decoration: underline;" class="highlight">Science project</span>: Use of photosynthetic microorganisms to remove residual nutrients
+                    from sewage water from aerobic treatment.</li>
+                <li>Environmental Monitoring, water sampling, verifications, growth promotion of photosynthetic microorganisms.</li>
+                <li>Performed microbiological and physico-chemical testing of sewage water.</li>
+                <li>Cultures of photosynthetic microorganisms in Erlenmeyer and tubular photobioreactor
+                    in wastewater from sewage treatment plant, by batch process.</li>
+                <li>Assisted in developing, writing and updating, laboratory POP's and approved
+                        procedures.</li>
+                <li>Assisted other scientists through consultation based on prior knowledge.</li>
+                <li>Demonstrated experience of developing and leading projects.</li>
+                <li>Analytical abilities with demonstrated use of design of experiments and other statistical
+                    methods or tools.</li>
+                <li><span style="font-weight: bold; text-decoration: underline;" class="highlight">Results</span>: It was possible to use wastewater for cultivation of Chlorella vulgaris and
+                    Monoraphydium contortum, in Erlenmeyer flask and tubular photobioreactor.</li>
+                <li>It was possible to purify the wastewater removing phosphate and nitrate, with
+                        percentages of removal of these nutrients of up to 99%. There was also a decrease in
+                        the DQO values of wastewater used for the growth of microalgae.</li>
+            </ul>
+            <h4>
+                Researcher
+            </h4>
+            <h5>
+                University of São Paulo - Brazil | 2011/2014
+            </h5>
+            <ul>
+                <li><span style="font-weight: bold; text-decoration: underline;" class="highlight">Science project</span>: Evaluation of Botryococcus braunii growth in a tubular reactor using
+                    different concentrations of nitrogen and phosphorus.</li>
+                <li>Used knowledge of microbiology and engineering to invent, design & develop new
+                    photophioreactor technologies.</li>
+                <li>Cultures of Botryococcus braunii in Erlenmeyer and tubular photobioreactor in Chu
+                    medium.</li>
+                <li>Determination of Total Fatty Acid content.</li>
+                <li><span style="font-weight: bold; text-decoration: underline;" class="highlight">Results</span>: The culture media evaluated for the growth of microalgae, showed the
+                    importance of the influence of salinity on growth and biomass composition of
+                    Botryococcus braunii.</li>
+                <li>Comprehensive understanding of microbiological test methods and procedures.</li>
+            </ul>
+            <h4>
+                Research stage
+            </h4>
+            <h5>
+                University of São Paulo - Brazil | 2010/2010
+            </h5>
+            <ul>
+                <li><span style="font-weight: bold; text-decoration: underline;" class="highlight">Science project</span>: Evaluation of the production of polyhydroxyalkanoates in recombinant
+                    strains of Pseudomonas sp.</li>
+                <li>Monitoring and control of growth conditions.</li>
+                <li>Determination of nutrient concentration.</li>
+                <li>Determination of the composition and content of polyhydroxyalkanoates (HPLC).</li>
+                <li><span style="font-weight: bold; text-decoration: underline;" class="highlight">Results</span>: Growth of bacteria and composition of polyhydroxyalkanoates.
+                    Comprehensive understanding of microbiological test methods and procedures.</li>
+            </ul>
+            <h3>
+                FURTHER TRAINING COURSE
+            </h3>
+            <!-- <ul style="list-style-type: ' \2713 &nbsp';"> -->
+            <ul>
+                <li>EAD Basic Office Package (Word, Excel, PowerPoint and Outlook) -
+                    Udemy.</li>
+                <li>Taxonomy of eukaryotic algae from continental waters. Institute of
+                    Botany, IBT, São Paulo, Brazil, 2018.</li>
+                <li>IELTS - Oral production - Level B1. Language Center of the University of
+                    São Paulo. Languages without Borders Program. 2018.</li>
+                <li>Ecology of peripheral algal communities from continental waters.
+                    Institute of Botany, IBT, São Paulo, Brazil, 2017.</li>
+                <li>Vegetable Taxonomic Nomenclature. Institute of Botany, IBT, São Paulo,
+                    Brazil, 2017.</li>
+                <li>AJE Scientific Writing Workshop. University of São Paulo, 2016.</li>
+                <li>Write Professional Emails in English. Georgia Institute of Technology,
+                    2016.</li>
+                <li>Biology of Cyanobacteria: Taxonomy, Ecology and Toxicology. Institute of
+                    Botany, IBT, São Paulo, Brazil, 2015.</li>
+                <li>Training workshop for researchers in multivariate statistical methods. Luiz
+                    de Queiroz School of Agriculture, ESALQ, Brazil, 2013.</li>
+                <li>Reader / Transcriber in Competition tests, Selection Processes and
+                    Evaluations. Ledor Course for ENEM. Include group. Professional and
+                    Managerial Development, 2012.</li>
+                <li>Maintaining GC and developing GC methods. Alginet Technologies, Brazil,
+                    2012.</li>
+            </ul>
+            <h3>
+                SCIENTIFIC ARTICLE
+            </h3>
+            <h4>
+                Evaluation of green microalgae isolated from central and north coast of São Paulo as source of oil.
+            </h4>
+            <ul>
+                <li>Journal of Biotechnology and Biodiversity, v. 9 (1), p. 12-19, 2021.</li>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Matsudo, M.C.; Sant'Anna, C.L.; Da Silva, R.C., Carvalho, J.C.M.</li>
+            </ul>
+            <h4>Isolation and Evaluation of Microalgae from Mangrove Area in South Coast of
+                São Paulo (Brazil) for Lipid Production.</h4>
+            <ul>
+                <li>International Journal of Current Microbiology and Applied Sciences, v. 9 (6), p.
+                    1293-1302, 2020.</li>
+                    <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Matsudo, M.C.; Sant'Anna, C.L.; Da Silva, R.C., Carvalho, J.C.M.</li>
+            </ul>
+            <h4>Potential of microalgae carotenoids for industrial application.</h4>
+            <ul>
+                <li>Applied Biochemistry and Biotechnology, v. 188 (3), p. 602-634, 2019.</li>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Cezare-Gomes, E.A; Mejia-Da-Silva,L.; Matsudo, M.C.; Ferreira Camargo,
+                    L.S.; Singh, A.K.; Carvalho, J.C.M.</li>
+            </ul>
+            <h4>An investigation into producing Botryococcus braunii in a tubular
+                photobioreactor.</h4>
+            <ul>
+                <li>Journal of Chemical Technology and Biotechnology, v. 91, p. 3053-3060, 2016.</li>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Matsudo, M.C.; Cezare-Gomes, E.A.; Carvalho, J.C.M.</li>
+            </ul>
+
+            <h4>Ethanol as complementary carbon source in Scenedesmus obliquus
+                cultivation.</h4>
+            <ul>
+                <li>Journal of Chemical Technology and Biotechnology, v. 92, p. 781, 2016.</li>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Matsudo, M.C.; Sousa, T.F.; Bezerra, R.P.; Sato, S.; Carvalho, J.C.M.</li>
+            </ul>
+
+            <h4>Ethanol effect on batch and fed-batch Arthrospira platensis growth.</h4>
+            <ul>
+                <li>Journal of Industrial Microbiology & Biotechnology, v. 41, p. 687-692, 2014.</li>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Bezerra, R.P.; Matsudo, M.C.; Sato, S.; Carvalho, J.C.M.</li>
+            </ul>
+
+            <h3>
+                CONGRESS
+            </h3>
+            <h4>Effects of nutrient, salinity and light intensities on growth of Botryococcus
+                braunii.</h4>
+            <ul>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Matsudo, M.C.; Carvalho, J.C.M.</li>
+            </ul>
+            <h4>Evaluation of growth of Botryococcus braunii in different media.</h4>
+            <ul>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Matsudo, M.C.; Carvalho, J.C.M.</li>
+            </ul>
+            <h4>Evaluation of growth of Botryococcus braunii in a tubular reactor using
+                different concentrations of nitrogen and light intensities.</h4>
+            <ul>
+                <li><span style="font-weight: bold; text-decoration: underline;">Authors</span>: Matsudo, M.C.; Carvalho, J.C.M.</li>
+            </ul>
+            <h3>
+                SEMINAR
+            </h3>
+            <h4>Winter course of the Cultural Commission of post-graduation in Biochemical
+                and Pharmaceutical Technology.</h4>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
